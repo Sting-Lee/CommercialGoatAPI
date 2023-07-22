@@ -10,6 +10,8 @@ Python sample code can be found in the `python` directory.
 ## Supported Platform
 <img src="/res/goat.png" width="100" height="100" alt="Goat"/>  <img src="/res/alias.png" width="100" height="100" alt="alias"/><br/>
 
+If you also need StockX API, please refer to [CommercialStockXAPI](https://github.com/Sting-Lee/CommercialStockXAPI/)
+
 ## Supported Interfaces
 
 CommercialGoatAPI supports the following interfaces for Goat and alias:
