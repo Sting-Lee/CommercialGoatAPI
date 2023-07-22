@@ -2,36 +2,38 @@
 
 CommercialGoatAPI is a project that provides remote HTTP access to the Goat API and alias API. It supports all interfaces of these platforms and serves as a global sneaker seller's tool, assisting in automating processes such as selling sneakers. The interfaces are actively maintained to ensure long-term availability.
 
-For detailed information about the interfaces, please refer to the following documents.
+For detailed information about the interfaces, please refer to the following guides:
 - [Goat/Alias API documentation(Online testing interface)](http://goatapi.spiderx.cc:61030/docs)
 
 Python sample code can be found in the `python` directory.
 
 ## Supported Platform
-<img src="/goat.png" width="100" height="100" alt="Goat"/>  <img src="/alias.png" width="100" height="100" alt="alias"/><br/>
+<img src="/res/goat.png" width="100" height="100" alt="Goat"/>  <img src="/res/alias.png" width="100" height="100" alt="alias"/><br/>
 
 ## Supported Interfaces
 
 CommercialGoatAPI supports the following interfaces for Goat and alias:
 
-  - Search for products
-  - View historical sales records
-  - Get product details
-  - Retrieve product sizes/market prices
-  - Access user basic information
-  - Retrieve seller information
+  - Query through keywords
+  - Query by specific criteria
+  - Login
+  - Get User self information
+  - Get User seller information
   - Update access_token
-  - Get on-sale products list
-  - View sold products list
-  - View historical sold products list
-  - Retrieve order details
+  - Get product details
+  - Query the recent sales of the specified slug
+  - Query the lowest price information of the specified slug.
+  - Query the listing. Return the product list.
+  - Query the sold. Return the product list.
+  - Query the history sold. Return the product list.
+  - Query the sold detail. Return the product detail.
   - Enable/disable vacation mode
-  - Remove products from sale
-  - Modify product price (individual/batch)
+  - Cancel product listing
+  - Modify/Update product price (individual)
   - List products for sale (individual/batch)
 
-- Other interfaces:
-  - Support additional interfaces as per your requirements
+  - Other interfaces:
+    - Support additional interfaces as per your requirements
 
 ## How to Access
 
