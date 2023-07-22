@@ -7,6 +7,9 @@ For detailed information about the interfaces, please refer to the following doc
 
 Python sample code can be found in the `python` directory.
 
+## Supported Platform
+<img src="/goat.png" width="100" height="100" alt="Goat"/>  <img src="/alias.png" width="100" height="100" alt="alias"/><br/>
+
 ## Supported Interfaces
 
 CommercialGoatAPI supports the following interfaces for Goat and alias:
