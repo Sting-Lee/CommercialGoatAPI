@@ -3,7 +3,7 @@
 CommercialGoatAPI is a project that provides remote HTTP access to the Goat API and alias API. It supports all interfaces of these platforms and serves as a global sneaker seller's tool, assisting in automating processes such as selling sneakers. The interfaces are actively maintained to ensure long-term availability.
 
 For detailed information about the interfaces, please refer to the following guides:
-- [Goat/Alias API documentation(Online testing interface)](http://goatapi.dataspiderhub.com/docs)
+- [Goat/Alias API documentation(Online testing interface)](http://goatapi.dataspiderhub.com/docs) or [Goat/Alias API documentation(Online testing interface)](http://goatapi.dataspiderhub.com/redoc)
 
 Python sample code can be found in the `python` directory.
 
