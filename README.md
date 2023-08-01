@@ -3,18 +3,20 @@
 CommercialGoatAPI is a project that provides remote HTTP access to the Goat API and alias API. It supports all interfaces of these platforms and serves as a global sneaker seller's tool, assisting in automating processes such as selling sneakers. The interfaces are actively maintained to ensure long-term availability.
 
 For detailed information about the interfaces, please refer to the following guides:
-- [Goat/Alias API documentation(Online testing interface)](http://goatapi.dataspiderhub.com/docs) or [Goat/Alias API documentation(Online testing interface)](http://goatapi.dataspiderhub.com/redoc)
+- [Goat/Alias API documentation 1(Online testing interface)](http://goatapi.dataspiderhub.com/docs) or [Goat/Alias API documentation 2(Online testing interface)](http://goatapi.dataspiderhub.com/redoc)
 
 Python sample code can be found in the `python` directory.
 
 ## Supported Platform
 <img src="/res/goat.png" width="100" height="100" alt="Goat"/>  <img src="/res/alias.png" width="100" height="100" alt="alias"/><br/>
 
+If you need Alias Web Sell API(https://sell.alias.org/), please contact us.
+
 If you also need StockX API, please refer to [CommercialStockXAPI](https://github.com/Sting-Lee/CommercialStockXAPI/)
 
 ## Supported Interfaces
 
-CommercialGoatAPI supports the following interfaces for Goat and alias:
+CommercialGoatAPI supports the following interfaces for Goat and alias(include alias app and web sell api):
 
   - Query through keywords
   - Query by specific criteria
@@ -56,3 +58,5 @@ The fee is based on the total monthly call volume and is paid on a monthly basis
 | 300,000~2,000,000    | $800                                    | 0.0004/req            |
 | 2,000,000~10,000,000 | $1600                                   | 0.00016/req           |
 | >10,000,000          | Pending(Exclusive deployment resources) | <0.00016/req          |
+
+contact us to request a trial period (one week) and get a discount.
