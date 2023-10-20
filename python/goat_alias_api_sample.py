@@ -1,8 +1,8 @@
 
 import requests
 
-base_url = "http://goatapi.spiderx.cc:61030"
-# Token needs to be applied for from the author and can be tested one week. Online testing can be seen at http://goatapi.spiderx.cc:61030/docs
+base_url = "https://goatapi.dataspiderhub.com"
+# Token needs to be applied for from the author and can be tested one week. Online testing can be seen at https://goatapi.dataspiderhub.com/docs
 # Contact the author Email: mocca_lee@outlook.com Discord: sting_lee
 TOKEN = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
@@ -57,6 +57,67 @@ def init_auth():
     url = f"{base_url}/api/alias/init_auth"
     params = {
         "token": TOKEN
+    }
+    response = requests.get(url, params=params)
+    return response.json()
+
+
+def goat_lowest_price(auth, slug, country_code, currency="USD"):
+    """
+    @description: 获取Goat商品最低价 Get the lowest price of Goat products
+    @param auth:
+    @param slug:
+    @param country_code: Available values : AF, AL, DZ, AS, AD, AO, AI, AQ, AG, AR, AM, AW, AU, AT, AZ, BS, BH, BD, BB, BY, BE, BZ, BJ, BM, BT, BO, BQ, BA, BW, BV, BR, IO, BN, BG, BF, BI, CV, KH, CM, CA, KY, CF, TD, CL, CN, CX, CC, CO, KM, CG, CD, CK, CR, HR, CU, CW, CY, CZ, CI, DK, DJ, DM, DO, EC, EG, SV, GQ, ER, EE, ET, FK, FO, FJ, FI, FR, GF, PF, TF, GA, GM, GE, DE, GH, GI, GR, GL, GD, GP, GU, GT, GG, GN, GW, GY, HT, HM, VA, HN, HK, HU, IS, IN, ID, IR, IQ, IE, IM, IL, IT, JM, JP, JE, JO, KZ, KE, KI, KP, KR, KW, KG, LA, LV, LB, LS, LR, LY, LI, LT, LU, MO, MG, MW, MY, MV, ML, MT, MH, MQ, MR, MU, YT, MX, FM, MD, MC, MN, ME, MS, MA, MZ, MM, NA, NR, NP, NL, NC, NZ, NI, NE, NG, NU, NF, MK, MP, NO, OM, PK, PW, PS, PA, PG, PY, PE, PH, PN, PL, PT, PR, QA, RO, RU, RW, RE, BL, SH, KN, LC, MF, PM, VC, WS, SM, ST, SA, SN, RS, SC, SL, SG, SX, SK, SI, SB, SO, ZA, GS, SS, ES, LK, SD, SR, SJ, SE, CH, SY, TW, TJ, TZ, TH, TL, TG, TK, TO, TT, TN, TR, TM, TC, TV, UG, UA, AE, UK, UM, US, UY, UZ, VU, VE, VN, VG, VI, WF, EH, YE, ZM, ZW, SZ, AX
+    @param currency: Default value : USD
+    @return:
+    """
+    url = f"{base_url}/api/alias/goat_lowest_price"
+    params = {
+        "token": TOKEN,
+        "auth": auth,
+        "slug": slug,
+        "country_code": country_code,
+        "currency": currency,
+    }
+    response = requests.get(url, params=params)
+    return response.json()
+
+
+def goat_highest_offers(auth, slug, country_code, currency="USD"):
+    """
+    @description: 获取Goat商品最高报价 Get the highest offer for Goat products
+    @param auth:
+    @param slug:
+    @param country_code:
+    @param currency:
+    @return:
+    """
+    url = f"{base_url}/api/alias/goat_highest_offers"
+    params = {
+        "token": TOKEN,
+        "auth": auth,
+        "slug": slug,
+        "country_code": country_code,
+        "currency": currency,
+    }
+    response = requests.get(url, params=params)
+    return response.json()
+
+
+def goat_product_detail(auth, slug, currency="USD"):
+    """
+    @description: 获取Goat商品详情 Get Goat product details
+    @param auth:
+    @param slug:
+    @param currency:
+    @return:
+    """
+    url = f"{base_url}/api/alias/goat_product_detail"
+    params = {
+        "token": TOKEN,
+        "auth": auth,
+        "slug": slug,
+        "currency": currency,
     }
     response = requests.get(url, params=params)
     return response.json()
@@ -403,4 +464,9 @@ if __name__ == '__main__':
     print(ping())
     print(query_by_sku("FW2499", 0))
     print(query_by_condition("popular", 0))
+    auth = init_auth()
+    print(auth)
+    print(goat_lowest_price(auth, 'off-white-x-air-force-1-mid-white-do6290-100', "US", "USD"))
+    print(goat_highest_offers(auth, 'off-white-x-air-force-1-mid-white-do6290-100', "US", "USD"))
+    print(goat_product_detail(auth, 'off-white-x-air-force-1-mid-white-do6290-100', "USD"))
 
