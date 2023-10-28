@@ -35,6 +35,8 @@ CommercialGoatAPI supports the following interfaces for Goat and alias(include a
   - Cancel product listing
   - Modify/Update product price (individual)
   - List products for sale (individual/batch)
+  - Get product price of Goat(buyer's price)
+  - Get the highest bid price of Goat(buyer's price)
 
   - Other interfaces:
     - Support additional interfaces as per your requirements
