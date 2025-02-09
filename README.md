@@ -3,7 +3,11 @@
 CommercialGoatAPI is a project that provides remote HTTP access to the Goat API and alias API. It supports all interfaces of these platforms and serves as a global sneaker seller's tool, assisting in automating processes such as selling sneakers. The interfaces are actively maintained to ensure long-term availability.
 
 For detailed information about the interfaces, please refer to the following guides:
-- [Goat/Alias API documentation 1(Online testing interface)](https://goatapi.dataspiderhub.com/docs) or [Goat/Alias API documentation 2(Online testing interface)](https://goatapi.dataspiderhub.com/redoc)
+- [Goat/Alias API documentation 1(Online testing interface)](https://goatapi.dataspiderhub.com/docs) 
+
+  OR
+
+- [Goat/Alias API documentation 2(Online testing interface)](https://goatapi.dataspiderhub.com/redoc)
 
 Python sample code can be found in the `python` directory.
 
@@ -18,7 +22,7 @@ If you also need StockX API, please refer to [CommercialStockXAPI](https://githu
 
 CommercialGoatAPI supports the following interfaces for Goat and alias(include alias app and web sell api):
 
-  - Query through keywords
+  - Query through keywords(with all params)
   - Query by specific criteria
   - Login
   - Get User self information
@@ -26,11 +30,15 @@ CommercialGoatAPI supports the following interfaces for Goat and alias(include a
   - Update access_token
   - Get product details
   - Query the recent sales of the specified slug
+  - Query the historical sales price of the specified slug
   - Query the lowest price information of the specified slug.
   - Query the listing. Return the product list.
-  - Query the sold. Return the product list.
+  - Query the sold product(orders). Return the product list.
   - Query the history sold. Return the product list.
   - Query the sold detail. Return the product detail.
+  - Start generating express label.
+  - Confirm the order.
+  - Cancel product.
   - Enable/disable vacation mode
   - Cancel product listing
   - Modify/Update product price (individual)
