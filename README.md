@@ -1,5 +1,7 @@
 # CommercialGoatAPI
 
+(**The project has been under long-term maintenance since 2022, stable and reliable**. We look forward to your cooperation)
+
 CommercialGoatAPI is a project that provides remote HTTP access to the Goat API and alias API. It supports all interfaces of these platforms and serves as a global sneaker seller's tool, assisting in automating processes such as selling sneakers. The interfaces are actively maintained to ensure long-term availability.
 
 For detailed information about the interfaces, please refer to the following guides:
