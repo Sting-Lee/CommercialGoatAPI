@@ -5,11 +5,7 @@
 CommercialGoatAPI is a project that provides remote HTTP access to the Goat API and alias API. It supports all interfaces of these platforms and serves as a global sneaker seller's tool, assisting in automating processes such as selling sneakers. The interfaces are actively maintained to ensure long-term availability.
 
 For detailed information about the interfaces, please refer to the following guides:
-- [Goat/Alias API documentation 1(Online testing interface)](https://goatapi.dataspiderhub.com/docs) 
-
-  OR
-
-- [Goat/Alias API documentation 2(Online testing interface)](https://goatapi.dataspiderhub.com/redoc)
+- [Goat/Alias API documentation(Online testing interface)](https://api.spiderx.cc/api/alias/docs) 
 
 Python sample code can be found in the `python` directory.
 
@@ -58,7 +54,6 @@ For access and inquiries, please reach out to:
 - Discord: sting_lee
 - E-Mail: mocca_lee@outlook.com
 - Skype: mocca_lee@outlook.com (Name:Sting | ID: live:.cid.c7e659cd5c4c98e8)
-- Website: https://profile.dataspiderhub.com
 
 Contact us to request a trial period (one week). If you have additional requirements or need further assistance, feel free to discuss them with us.
 
